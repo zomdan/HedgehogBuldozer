@@ -3,12 +3,16 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Wall
+  - Goal
+  - Trap1
+  - Trap2
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - HoldLayer
   - Water
   - UI
   - 
