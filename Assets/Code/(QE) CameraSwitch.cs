@@ -7,7 +7,8 @@ public class CameraSwitch : MonoBehaviour
     public List<GameObject> cameras;
     private int activeCameraIndex = 0;
     private float lastSwitchTime = 0f;
-[SerializeField] private float switchDelay = 1f;
+[SerializeField] private float switchDelay;
+
 
     void Start()
     {
@@ -30,6 +31,20 @@ public class CameraSwitch : MonoBehaviour
             {
                 SwitchCamera((activeCameraIndex + 1) % cameras.Count);
             }
+
+        }
+
+
+            if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+        }
+
+        if (Input.GetMouseButtonDown(1))
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
         }
     }
 
@@ -46,8 +61,10 @@ public class CameraSwitch : MonoBehaviour
     void ActivateCamera(int index)
     {
         for (int i = 0; i < cameras.Count; i++)
-        {
-            cameras[i].SetActive(i == index);
+        {  if (i == index)
+        {cameras[i].SetActive(true);  }
+           else 
+        {cameras[i].SetActive(false);}
         }
     }
 }

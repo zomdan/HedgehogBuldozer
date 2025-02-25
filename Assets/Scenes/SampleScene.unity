@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 1950501}
   - component: {fileID: 1950500}
   m_Layer: 0
-  m_Name: Camera
+  m_Name: Camera 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -382,6 +382,7 @@ GameObject:
   m_Component:
   - component: {fileID: 714484765}
   - component: {fileID: 714484766}
+  - component: {fileID: 714484767}
   m_Layer: 0
   m_Name: camcontroller
   m_TagString: Untagged
@@ -422,6 +423,22 @@ MonoBehaviour:
   - {fileID: 1488217113}
   - {fileID: 1950498}
   switchDelay: 0.3
+--- !u!114 &714484767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 714484764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a536027361245f542afb33107c552e7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mouseSensitivity: 2
+  playerCamera: {fileID: 1165222384}
+  minY: -30
+  maxY: 120
 --- !u!1001 &733158948
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -613,7 +630,7 @@ GameObject:
   - component: {fileID: 1165222386}
   - component: {fileID: 1165222385}
   m_Layer: 0
-  m_Name: Camera
+  m_Name: Camera 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -732,7 +749,7 @@ GameObject:
   - component: {fileID: 1462595169}
   - component: {fileID: 1462595168}
   m_Layer: 0
-  m_Name: Camera
+  m_Name: Camera 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -824,7 +841,7 @@ GameObject:
   - component: {fileID: 1488217116}
   - component: {fileID: 1488217115}
   m_Layer: 0
-  m_Name: Camera
+  m_Name: Camera 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -976,9 +993,6 @@ GameObject:
   - component: {fileID: 1752433418}
   - component: {fileID: 1752433417}
   - component: {fileID: 1752433423}
-  - component: {fileID: 1752433422}
-  - component: {fileID: 1752433421}
-  - component: {fileID: 1752433420}
   m_Layer: 0
   m_Name: player
   m_TagString: Untagged
@@ -1074,57 +1088,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1752433415}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &1752433420
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1752433415}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 81aa0334863ff8d4797562258ded2e9b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  interactDistance: 20
---- !u!114 &1752433421
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1752433415}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad76f886f4f0c4141b3f05926b72d4bc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PlayerCamera: {fileID: 0}
-  Sensitivities: {x: 4, y: 4}
-  XYRotation: {x: 0, y: 0}
-  isCursorLocked: 1
-  interactor: {fileID: 0}
---- !u!114 &1752433422
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1752433415}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 268aee024b188554b91e149be95a346a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MoveSmoothTime: 0.1
-  GravityStrength: 9
-  JumpStrength: 5
-  WalkSpeed: 3
-  RunSpeed: 8
-  Controller: {fileID: 0}
-  CurrentMoveVelocity: {x: 0, y: 0, z: 0}
-  MoveDampVelocity: {x: 0, y: 0, z: 0}
-  CurrentForceVelocity: {x: 0, y: 0, z: 0}
 --- !u!143 &1752433423
 CharacterController:
   m_ObjectHideFlags: 0
