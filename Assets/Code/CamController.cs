@@ -28,6 +28,9 @@ public class CamController : MonoBehaviour
     private float Yrot = -45f;
     [SerializeField] private float mouseSensitivity = 2.0f;
 
+    //Camera Modes
+    [SerializeField] private List<GameObject> colormodes;
+
     void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
@@ -67,6 +70,12 @@ public class CamController : MonoBehaviour
             {
                 Debug.Log("nextcam");
                 SwitchCamera((activeCameraIndex + 1) % cameras.Count);
+                
+            }
+            else if (Input.GetKeyDown(KeyCode.Space)) //nextcolormode
+            {
+                Debug.Log("nextcolormode");
+                SwitchColorMode();
                 
             }
 
@@ -121,4 +130,15 @@ public class CamController : MonoBehaviour
         because I've looked it up a million times and still don't get it because I suck at math. 
         But it just works that way so I'm gonna utilize it*/
     }
+
+    void SwitchColorMode(){
+         for (int i = 0; i < colormodes.Count; i++){
+            if (colormodes[i].activeSelf == true){
+                colormodes[i].SetActive(false);
+                if (i != colormodes.Count-1){colormodes[i+1].SetActive(true);}
+                else {colormodes[0].SetActive(true); }
+            }
+         }
+    }
+
 }
