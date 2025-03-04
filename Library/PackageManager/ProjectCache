@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638760818977998365
-    m_Hash: 3441272597
+      ticks: 638766801320206038
+    m_Hash: 3993605159
   m_LockFileStatus:
     m_FilePath: C:/Unity Projects/HedgehogBuldozer/HedgehogBuldozer/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638760818978018159
-    m_Hash: 1984572435
+      ticks: 638766801320281232
+    m_Hash: 1705833370
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -1074,6 +1074,72 @@ m_ResolvedPackages:
     path: 
   unityLifecycle:
     version: 1.9.4
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
+  fingerprint: 
+- packageId: com.zigurous.shaders.blending@https://github.com/zigurous/unity-blend-shaders.git
+  testable: 0
+  isDirectDependency: 1
+  version: 2.0.0
+  source: 5
+  resolvedPath: C:\Unity Projects\HedgehogBuldozer\HedgehogBuldozer\Library\PackageCache\com.zigurous.shaders.blending@4b351991a8
+  assetPath: Packages/com.zigurous.shaders.blending
+  name: com.zigurous.shaders.blending
+  displayName: Blend Shaders
+  author:
+    name: Zigurous
+    email: support@zigurous.com
+    url: https://zigurous.com
+  category: 
+  type: 
+  description: "The Blend Shaders package contains over 20 shaders for blending textures
+    and sprites in Unity (based on Photoshop's blend modes).\n\nSupported Modes:\n\u2022
+    Add\n\u2022 Average\n\u2022 Color Burn\n\u2022 Color Dodge\n\u2022 Darken\n\u2022
+    Difference\n\u2022 Exclusion\n\u2022 Glow\n\u2022 Hard Light\n\u2022 Hard Mix\n\u2022
+    Lighten\n\u2022 Linear Burn\n\u2022 Linear Dodge\n\u2022 Linear Light\n\u2022
+    Multiply\n\u2022 Negation\n\u2022 Overlay\n\u2022 Phoenix\n\u2022 Pin Light\n\u2022
+    Reflect\n\u2022 Screen\n\u2022 Soft Light\n\u2022 Subtract\n\u2022 Vivid Light"
+  status: 0
+  errors: []
+  versions:
+    all: []
+    compatible: []
+    recommended: 
+    deprecated: []
+  dependencies: []
+  resolvedDependencies: []
+  keywords:
+  - shaders
+  - blending
+  - textures
+  - sprites
+  - surface
+  - fragment
+  - photoshop
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 0
+  documentationUrl: 
+  hasRepository: 0
+  repository:
+    type: 
+    url: 
+    revision: 
+    path: 
+  unityLifecycle:
+    version: 
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
