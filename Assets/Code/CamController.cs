@@ -28,7 +28,7 @@ public class CamController : MonoBehaviour
     private float Yrot = -45f;
     [SerializeField] private float mouseSensitivity = 2.0f;
 
-    //Camera Modes
+    //Color Modes
     [SerializeField] private List<GameObject> colormodes;
 
     void Start()
@@ -131,14 +131,16 @@ public class CamController : MonoBehaviour
         But it just works that way so I'm gonna utilize it*/
     }
 
-    void SwitchColorMode(){
-         for (int i = 0; i < colormodes.Count; i++){
-            if (colormodes[i].activeSelf == true){
-                colormodes[i].SetActive(false);
-                if (i != colormodes.Count-1){colormodes[i+1].SetActive(true);}
-                else {colormodes[0].SetActive(true); }
+    void SwitchColorMode(){ 
+    for (int i = 0; i < colormodes.Count; i++){
+        if (colormodes[i].activeSelf){
+            colormodes[i].SetActive(false);
+            if (i != colormodes.Count - 1) colormodes[i + 1].SetActive(true);
+            else colormodes[0].SetActive(true);
+            return;
             }
-         }
+        }
     }
+
 
 }
