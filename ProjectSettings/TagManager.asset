@@ -8,6 +8,7 @@ TagManager:
   - Goal
   - Trap1
   - Trap2
+  - Computer
   layers:
   - Default
   - TransparentFX
