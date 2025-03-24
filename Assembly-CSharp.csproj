@@ -66,6 +66,7 @@
   <ItemGroup>
     <Compile Include="Assets\Code\CamController.cs" />
     <Compile Include="Assets\Code\MGame2Move.cs" />
+    <Compile Include="Assets\Code\Global Variables.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Imports\TextMesh Pro\Shaders\TMPro.cginc" />
