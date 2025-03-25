@@ -4,15 +4,9 @@ using UnityEngine;
 
 public class GlobalVariables : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public static int SequenceCode = 10;
 }
+
+/* How to change these variables in other scripts: GlobalVariable.variableName = value;
+    How to use it in a condition (most likely use case is in update method): if (GlobalVariable.variableName == value){}
+*/

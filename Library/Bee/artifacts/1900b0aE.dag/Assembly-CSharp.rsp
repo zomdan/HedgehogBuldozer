@@ -362,6 +362,7 @@
 "Assets/Code/CamController.cs"
 "Assets/Code/Global Variables.cs"
 "Assets/Code/MGame2Move.cs"
+"Assets/Code/NOTES_TEMP.cs"
 -langversion:9.0
 /deterministic
 /optimize+

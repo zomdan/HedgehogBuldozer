@@ -12,9 +12,11 @@ public class CamController : MonoBehaviour
     public Transform CamBody;
     public Transform Camera;
 
-    // Camera Angle Limits
+    // Camera Angle Limits  - X angles are calculated dynamically later, you just need to enter the initial values to use in this case.
+    [SerializeField] private float Yrot = -45f; // current obj Y rotation.
     [SerializeField] private float minY = -25f; 
     [SerializeField] private float maxY = 65f;  
+    [SerializeField] private float Xlooklimit = 45f;
     [SerializeField] private float minX = -90f;
     [SerializeField] private float maxX = 0f; 
 
@@ -25,7 +27,6 @@ public class CamController : MonoBehaviour
     // Camera Angles Misc
     private float rotationX = 0f;
     private float rotationY = 0f;
-    private float Yrot = -45f;
     [SerializeField] private float mouseSensitivity = 2.0f;
 
     //Color Modes
@@ -101,7 +102,7 @@ public class CamController : MonoBehaviour
          Camera = cameras[i].transform;
          CamBody = cameras[i].transform.parent;
          Yrot = cameras[i].transform.eulerAngles.y;
-        minX = Yrot - 45f; maxX = Yrot + 45f; // so it controls the rotation limits dynamically
+        minX = Yrot - Xlooklimit; maxX = Yrot + Xlooklimit; // so it controls the rotation limits dynamically
         }
            else 
         {cameras[i].SetActive(false);}
@@ -141,6 +142,6 @@ public class CamController : MonoBehaviour
             }
         }
     }
-
+        // maybe getsets idk my brains not working rn
 
 }
