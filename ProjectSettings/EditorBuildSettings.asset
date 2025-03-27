@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/what the hell man.unity
+    path: Assets/Scenes/MiniGame.unity
     guid: e7eb70bc2832a33438ca3c6cb4ae051e
   m_configObjects: {}
