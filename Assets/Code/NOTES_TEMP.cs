@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class NOTES_TEMP : MonoBehaviour
 {/*
-    1. Create parent GameObjects for the Cameras
+    1. Add trigger box player enters to move LvLs, it will switch the CamController obj
     2. Make the tutorial scene. 
     3. Cutscene Manager GameObject - 
         public class CutsceneManager : MonoBehaviour{
@@ -23,7 +23,7 @@ public class NOTES_TEMP : MonoBehaviour
                 camController.cameras[camController.activeCameraIndex].SetActive(true);
             }
         }
-    4. Ummm request to model empty black space for robot to go into the elevator? Since theres just a mini door thing at the moment
+    4. Remodel the 
     5. Thats all for now I think. goofnight
 
 */}

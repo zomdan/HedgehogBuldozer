@@ -65,9 +65,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Code\CamController.cs" />
-    <Compile Include="Assets\Code\sacambambaspis.cs" />
-    <Compile Include="Assets\Code\MGame2Move.cs" />
+    <Compile Include="Assets\Code\Move2D.cs" />
+    <Compile Include="Assets\Code\RayCasting.cs" />
     <Compile Include="Assets\Code\Global Variables.cs" />
+    <Compile Include="Assets\Code\Move3D.cs" />
     <Compile Include="Assets\Code\NOTES_TEMP.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -91,6 +92,7 @@
     <None Include="Assets\Imports\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
     <None Include="Assets\Imports\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
     <None Include="Assets\Imports\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
+    <None Include="Assets\Materials\Glow Shader.shader" />
     <None Include="Assets\Imports\TextMesh Pro\Shaders\TMP_Sprite.shader" />
   </ItemGroup>
   <ItemGroup>

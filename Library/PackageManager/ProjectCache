@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638787031763661014
-    m_Hash: 3974381261
+      ticks: 638789029401149391
+    m_Hash: 4012483831
   m_LockFileStatus:
     m_FilePath: C:/Unity Projects/HedgeHog Bulldozer/HedgehogBuldozer/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638787031763806397
-    m_Hash: 3367821722
+      ticks: 638789029401383579
+    m_Hash: 565650348
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -1297,72 +1297,6 @@ m_ResolvedPackages:
     path: 
   unityLifecycle:
     version: 1.9.4
-    nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
-  fingerprint: 
-- packageId: com.zigurous.shaders.blending@https://github.com/zigurous/unity-blend-shaders.git
-  testable: 0
-  isDirectDependency: 1
-  version: 2.0.0
-  source: 5
-  resolvedPath: C:\Unity Projects\HedgeHog Bulldozer\HedgehogBuldozer\Library\PackageCache\com.zigurous.shaders.blending@4b351991a8
-  assetPath: Packages/com.zigurous.shaders.blending
-  name: com.zigurous.shaders.blending
-  displayName: Blend Shaders
-  author:
-    name: Zigurous
-    email: support@zigurous.com
-    url: https://zigurous.com
-  category: 
-  type: 
-  description: "The Blend Shaders package contains over 20 shaders for blending textures
-    and sprites in Unity (based on Photoshop's blend modes).\n\nSupported Modes:\n\u2022
-    Add\n\u2022 Average\n\u2022 Color Burn\n\u2022 Color Dodge\n\u2022 Darken\n\u2022
-    Difference\n\u2022 Exclusion\n\u2022 Glow\n\u2022 Hard Light\n\u2022 Hard Mix\n\u2022
-    Lighten\n\u2022 Linear Burn\n\u2022 Linear Dodge\n\u2022 Linear Light\n\u2022
-    Multiply\n\u2022 Negation\n\u2022 Overlay\n\u2022 Phoenix\n\u2022 Pin Light\n\u2022
-    Reflect\n\u2022 Screen\n\u2022 Soft Light\n\u2022 Subtract\n\u2022 Vivid Light"
-  status: 0
-  errors: []
-  versions:
-    all: []
-    compatible: []
-    recommended: 
-    deprecated: []
-  dependencies: []
-  resolvedDependencies: []
-  keywords:
-  - shaders
-  - blending
-  - textures
-  - sprites
-  - surface
-  - fragment
-  - photoshop
-  registry:
-    id: main
-    name: 
-    url: https://packages.unity.com
-    scopes: []
-    isDefault: 1
-    capabilities: 7
-    configSource: 0
-  hideInEditor: 1
-  isAssetStorePackage: 0
-  datePublishedTicks: 0
-  documentationUrl: 
-  hasRepository: 0
-  repository:
-    type: 
-    url: 
-    revision: 
-    path: 
-  unityLifecycle:
-    version: 
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
@@ -3317,16 +3251,45 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 
-  type: 
+  type: asset
   description: "This package provides Unity C# bindings to the Autodesk\xAE FBX\xAE
     SDK."
   status: 0
   errors: []
   versions:
     all:
+    - 2.0.0-preview
+    - 2.0.0-preview.4
+    - 2.0.0-preview.5
+    - 2.0.0-preview.6
+    - 2.0.0-preview.7
+    - 2.0.1-preview.1
+    - 3.0.0-preview.1
+    - 3.0.1-preview.1
+    - 3.1.0-preview.1
+    - 3.1.0-preview.2
+    - 4.0.0-pre.1
+    - 4.0.0-pre.2
+    - 4.0.1
+    - 4.1.0-pre.1
+    - 4.1.0
+    - 4.1.1
+    - 4.1.2
+    - 4.2.0-pre.1
+    - 4.2.0
     - 4.2.1
+    - 5.0.0-pre.1
+    - 5.0.0
+    - 5.1.0-pre.1
+    - 5.1.0
+    - 5.1.1
     compatible:
     - 4.2.1
+    - 5.0.0-pre.1
+    - 5.0.0
+    - 5.1.0-pre.1
+    - 5.1.0
+    - 5.1.1
     recommended: 4.2.1
     deprecated: []
   dependencies: []
@@ -3347,7 +3310,7 @@ m_ResolvedPackages:
     configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 0
+  datePublishedTicks: 638089453470000000
   documentationUrl: https://docs.unity3d.com/Packages/com.autodesk.fbx@4.2/manual/index.html
   hasRepository: 1
   repository:

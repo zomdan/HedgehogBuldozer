@@ -9,6 +9,7 @@ TagManager:
   - Trap1
   - Trap2
   - Computer
+  - RayCastable
   layers:
   - Default
   - TransparentFX
@@ -17,7 +18,7 @@ TagManager:
   - Water
   - UI
   - PostProcessing
-  - 
+  - Glow
   - 
   - 
   - 
