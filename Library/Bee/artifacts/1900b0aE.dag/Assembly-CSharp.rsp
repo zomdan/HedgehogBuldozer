@@ -365,13 +365,11 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.34f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/Code/CamController.cs"
 "Assets/Code/Global Variables.cs"
+"Assets/Code/GlowToggle (test).cs"
 "Assets/Code/Move2D.cs"
 "Assets/Code/Move3D.cs"
 "Assets/Code/NOTES_TEMP.cs"
 "Assets/Code/RayCasting.cs"
-"Assets/Shaders/Add Script test.cs"
-"Assets/Shaders/gtgl.cs"
-"Assets/Shaders/test.cs"
 -langversion:9.0
 /deterministic
 /optimize+
