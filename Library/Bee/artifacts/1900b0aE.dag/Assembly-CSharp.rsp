@@ -369,6 +369,9 @@
 "Assets/Code/Move3D.cs"
 "Assets/Code/NOTES_TEMP.cs"
 "Assets/Code/RayCasting.cs"
+"Assets/Shaders/Add Script test.cs"
+"Assets/Shaders/gtgl.cs"
+"Assets/Shaders/test.cs"
 -langversion:9.0
 /deterministic
 /optimize+
