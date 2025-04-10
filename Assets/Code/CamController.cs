@@ -37,6 +37,7 @@ public class CamController : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
 
+        cameras[0].SetActive(true);
         for (int i = 0; i < cameras.Count; i++)
         {	if (i!= activeCameraIndex){
                 cameras[i].SetActive(false); }

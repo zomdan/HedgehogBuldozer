@@ -67,6 +67,7 @@
     <Compile Include="Assets\Code\CamController.cs" />
     <Compile Include="Assets\Code\GlowToggle (test).cs" />
     <Compile Include="Assets\Code\Move2D.cs" />
+    <Compile Include="Assets\Code\FlyCam.cs" />
     <Compile Include="Assets\Code\RayCasting.cs" />
     <Compile Include="Assets\Code\Global Variables.cs" />
     <Compile Include="Assets\Code\Move3D.cs" />
