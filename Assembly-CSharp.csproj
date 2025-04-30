@@ -71,7 +71,6 @@
     <Compile Include="Assets\Code\RayCasting.cs" />
     <Compile Include="Assets\Code\Global Variables.cs" />
     <Compile Include="Assets\Code\Move3D.cs" />
-    <Compile Include="Assets\Code\NOTES_TEMP.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Imports\TextMesh Pro\Shaders\TMPro.cginc" />

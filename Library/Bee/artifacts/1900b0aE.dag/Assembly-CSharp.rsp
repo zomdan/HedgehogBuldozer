@@ -369,7 +369,6 @@
 "Assets/Code/GlowToggle (test).cs"
 "Assets/Code/Move2D.cs"
 "Assets/Code/Move3D.cs"
-"Assets/Code/NOTES_TEMP.cs"
 "Assets/Code/RayCasting.cs"
 -langversion:9.0
 /deterministic

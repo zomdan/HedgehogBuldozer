@@ -50,7 +50,6 @@ public class FlyCam : MonoBehaviour
 
     private void OnFlyEnd()
     {
-        Debug.Log("Flying transition ended.");
         flyCam.gameObject.SetActive(false);
             Debug.Log("FlyCam Disabled.");
         
