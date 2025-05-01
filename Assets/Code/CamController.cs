@@ -9,25 +9,26 @@ public class CamController : MonoBehaviour
     // Camera objects & related
     public List<GameObject> cameras; // If it gives error multiple Listeners in one scene, maybe you're forgetting to input this in the script.
     private int activeCameraIndex = 0;
-    public Transform CamBody;
+    
+    //init:
+    private Transform CamBody;
     public Transform Camera;
-
-    // Camera Angle Limits  - X angles are calculated dynamically later, you just need to enter the initial values to use in this case.
-    [SerializeField] private float Yrot = -45f; // current obj Y rotation.
+        // Camera Angle Limits  - X angles are calculated dynamically later, you just need to enter the initial values to use in this case.
+    private float Yrot = -45f; // current obj Y rotation.
     [SerializeField] private float minY = -25f; 
     [SerializeField] private float maxY = 65f;  
-    [SerializeField] private float Xlooklimit = 45f;
-    [SerializeField] private float minX = -90f;
-    [SerializeField] private float maxX = 0f; 
+    [SerializeField] private float verticalLookRange = 45f;
+    private float minX = -90f;
+    private float maxX = 0f; 
 
     // Camera Switching Settings
     private float lastSwitchTime = 0f;
-    [SerializeField] private float switchDelay = 0.3f;
+    private float switchDelay = 0.3f;
 
     // Camera Angles Misc
     private float rotationX = 0f;
     private float rotationY = 0f;
-    [SerializeField] private float mouseSensitivity = 2.0f;
+    private float mouseSensitivity = 2.0f;
 
     //Color Modes
     [SerializeField] private List<GameObject> colormodes;
@@ -42,6 +43,13 @@ public class CamController : MonoBehaviour
         {	if (i!= activeCameraIndex){
                 cameras[i].SetActive(false); }
         }
+
+        CamBody = Camera.parent;
+        Yrot = Camera.transform.eulerAngles.y;
+        float Xrot = transform.eulerAngles.x;
+        minX = Xrot - verticalLookRange;
+        maxX = Xrot + verticalLookRange;
+
     }
 
     void Update()
@@ -103,7 +111,7 @@ public class CamController : MonoBehaviour
          Camera = cameras[i].transform;
          CamBody = cameras[i].transform.parent;
          Yrot = cameras[i].transform.eulerAngles.y;
-        minX = Yrot - Xlooklimit; maxX = Yrot + Xlooklimit; // so it controls the rotation limits dynamically
+        minX = Yrot - verticalLookRange; maxX = Yrot + verticalLookRange; // so it controls the rotation limits dynamically
         }
            else 
         {cameras[i].SetActive(false);}

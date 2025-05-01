@@ -8,13 +8,13 @@ public class FlyCam : MonoBehaviour
 
     [SerializeField] private Camera startCam;
     [SerializeField] private Camera targetCam;
-    [SerializeField] private float flySpeed = 2f;
+    
+     private float flySpeed = 2f;
+     private float flyDelay = 2f;
 
-    [SerializeField] private float flyDelay = 2f;
+    [SerializeField] private GameObject nextCamController;
 
-    [SerializeField] private GameObject targetCamController;
-
-    [SerializeField] private GameObject thisButton;
+    [SerializeField] private GameObject swaptriggerButton;
 
     private bool isFlying = false;
     private float flyPercent = 0f;
@@ -54,10 +54,11 @@ public class FlyCam : MonoBehaviour
             Debug.Log("FlyCam Disabled.");
         
 
-        targetCamController.SetActive(true);
+        nextCamController.SetActive(true);
         gameObject.SetActive(false);
-        thisButton.SetActive(false);
+        swaptriggerButton.SetActive(false);
             Debug.Log("Switched Camera Controller.");
+        targetCam.gameObject.SetActive(true);
 
     }
 }
