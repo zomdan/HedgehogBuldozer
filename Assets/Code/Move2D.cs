@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Move2D : MonoBehaviour
 {
@@ -112,5 +113,14 @@ public class Move2D : MonoBehaviour
         // ITS TIME TO WIN!!
         Time.timeScale = 0;
         winScreen.SetActive(true);
+        
+        SceneManager.LoadScene("Main Scene");
+    }
+
+     public void RestartGame()
+    {
+        Time.timeScale = 1;  // Resume time
+        deathScreen.SetActive(false);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);  // Reload the current scene
     }
 }

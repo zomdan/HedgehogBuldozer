@@ -141,16 +141,39 @@ public class CamController : MonoBehaviour
         But it just works that way so I'm gonna utilize it*/
     }
 
-    void SwitchColorMode(){ 
-    for (int i = 0; i < colormodes.Count; i++){
-        if (colormodes[i].activeSelf){
+void SwitchColorMode()
+{
+    for (int i = 0; i < colormodes.Count; i++)
+    {
+        if (colormodes[i].activeSelf)
+        {
             colormodes[i].SetActive(false);
-            if (i != colormodes.Count - 1) colormodes[i + 1].SetActive(true);
-            else colormodes[0].SetActive(true);
-            return;
+            int next = (i + 1) % colormodes.Count;
+            colormodes[next].SetActive(true);
+
+            GameObject[] redObjects = GameObject.FindGameObjectsWithTag("Red");
+            GameObject[] blueObjects = GameObject.FindGameObjectsWithTag("Blue");
+
+            switch (next)
+            {
+                case 0: // None
+                    foreach (var obj in redObjects) obj.SetActive(false);
+                    foreach (var obj in blueObjects) obj.SetActive(false);
+                    break;
+                case 1: // Red
+                    foreach (var obj in redObjects) obj.SetActive(true);
+                    foreach (var obj in blueObjects) obj.SetActive(false);
+                    break;
+                case 2: // Blue
+                    foreach (var obj in redObjects) obj.SetActive(false);
+                    foreach (var obj in blueObjects) obj.SetActive(true);
+                    break;
             }
+
+            return;
         }
     }
+}
         // maybe getsets idk my brains not working rn
 
 }

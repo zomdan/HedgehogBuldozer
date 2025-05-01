@@ -56,8 +56,12 @@ public class FlyCam : MonoBehaviour
 
         nextCamController.SetActive(true);
         gameObject.SetActive(false);
+
+        if (swaptriggerButton){
         swaptriggerButton.SetActive(false);
+        }
             Debug.Log("Switched Camera Controller.");
+        startCam.gameObject.SetActive(false);
         targetCam.gameObject.SetActive(true);
 
     }
